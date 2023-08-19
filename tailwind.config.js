@@ -1,8 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html","./src/**/*.{html,js}"],
+  content: ["./index.html", "./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#FF6363",
+        secondary: {
+          100: "#E2E2D5",
+          200: "#888883",
+        },
+      },
+      fontFamily: {
+        body: ["Nunito"],
+      },
+    },
   },
+  extend: {},
   plugins: [],
-}
+};
